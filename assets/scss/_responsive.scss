@@ -1,0 +1,33 @@
+@media screen and (max-width: 768px) {
+    header{
+        position: relative;
+        .nav_links
+        {
+            transform: translateY(-95px);
+            transition: 0.3s ease;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            z-index: -1;
+            &.nav_toggle
+            {
+                transform: translateY(95px);
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                row-gap: 10px;
+                align-items: flex-start;
+                width: 300px;
+                background: var(--shade-color);
+                border-radius: 15px;
+            }
+    }
+        .hambtn{
+            display: block;
+        }
+    }
+}

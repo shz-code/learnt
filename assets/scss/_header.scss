@@ -1,0 +1,20 @@
+header{
+    background: var(--shade-color);
+    .nav_links
+    {
+        ul{
+            display: flex;
+            align-items: center;
+            list-style: none;
+            column-gap: 10px;
+            margin-bottom: 0;
+        }
+    }
+    .hambtn{
+        cursor: pointer;
+        display: none;
+        i{
+            font-size: 2rem;
+        }
+    }
+}
