@@ -10,7 +10,6 @@
             position: absolute;
             left: 0;
             width: 100%;
-            z-index: -1;
             &.nav_toggle
             {
                 transform: translateY(95px);
@@ -22,7 +21,7 @@
                 row-gap: 10px;
                 align-items: flex-start;
                 width: 300px;
-                background: var(--shade-color);
+                background: red;
                 border-radius: 15px;
             }
     }

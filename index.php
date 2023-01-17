@@ -4,29 +4,28 @@
 <?php include("./components/_head.php") ?>
 
 <body>
-    <header>
-        <div class="container-sm">
-            <nav class="d-flex justify-content-between align-items-center">
-                <div class="nav_icon">
-                    Learnt
-                </div>
-                <div class="nav_links">
-                    <ul>
-                        <li class="nav_item"><a href="#">Courses</a></li>
-                        <li class="nav_item"><a href="#">Signup</a></li>
-                        <li class="nav_item"><a class="btn btn-primary" href="#">Get Started</a></li>
-                    </ul>
-                </div>
-                <div class="hambtn">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </div>
-    </header>
-    Hello
+    <?php include("./components/_header.php") ?>
 
-<?php include("./components/_footer.php"); ?>
-<?php include("./components/_js.php"); ?>
+    <main class="main container-sm">
+        <section class="hero d-md-flex py-4 justify-content-between align-items-center">
+            <div class="text-md-start text-center">
+                <h1>
+                    Learning Today, <br>
+                    Leading Tomorrow
+                </h1>
+                <p class="lead">We are team of talented designers making websites with Bootstrap</p>
+            </div>
+            <div class="d-none d-md-block">
+                <div class="img_box">
+                    <?php include("./assets/images/hero.svg") ?>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <?php include("./components/_footer.php"); ?>
+    <?php include("./components/_js.php"); ?>
 
 </body>
+
 </html>

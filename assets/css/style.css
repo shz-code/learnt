@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
 :root {
   --primary-color: #B7CDD7;
   --secondary-color: #2B5D73;
@@ -17,6 +18,22 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: "Roboto", sans-serif;
+}
+
+.img_box {
+  width: 400px;
+}
+.img_box svg {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 header {
@@ -49,7 +66,6 @@ header .hambtn i {
     position: absolute;
     left: 0;
     width: 100%;
-    z-index: -1;
   }
   header .nav_links.nav_toggle {
     transform: translateY(95px);
@@ -61,7 +77,7 @@ header .hambtn i {
     row-gap: 10px;
     align-items: flex-start;
     width: 300px;
-    background: var(--shade-color);
+    background: red;
     border-radius: 15px;
   }
   header .hambtn {

@@ -6,7 +6,7 @@
 
     <!-- Favicon -->
     <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
-    <!-- <meta http-equiv="refresh" content="2"> -->
+    <meta http-equiv="refresh" content="2">
     <!-- Vendor Css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
