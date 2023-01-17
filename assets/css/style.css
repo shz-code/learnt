@@ -4,6 +4,8 @@
   --secondary-color: #2B5D73;
   --bg-color: #FCFCFC;
   --shade-color: #88A7B5;
+  --text-primary: black;
+  --text-secondary: white;
 }
 
 * {
@@ -36,6 +38,23 @@ h1 {
   object-fit: contain;
 }
 
+.card {
+  padding: 30px;
+  height: 95%;
+}
+.card .card_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 10px;
+  height: 50px;
+  width: 50px;
+  margin: auto;
+  background: red;
+  border-radius: 50%;
+}
+
 header {
   background: var(--shade-color);
 }
@@ -54,6 +73,42 @@ header .hambtn i {
   font-size: 2rem;
 }
 
+.why_us .master_card {
+  width: 1200px;
+}
+.why_us .master_card .card {
+  margin: 0;
+  color: var(--text-secondary);
+  background: var(--secondary-color);
+  display: grid;
+  row-gap: 1rem;
+}
+.why_us .cards .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.why_us .cards .card .card_body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .why_us .master_card {
+    width: 500px;
+  }
+  .why_us .cards {
+    display: grid;
+  }
+}
+@media screen and (max-width: 992px) {
+  .why_us .master_card {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
 @media screen and (max-width: 768px) {
   header {
     position: relative;

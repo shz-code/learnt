@@ -1,0 +1,27 @@
+.why_us{
+    .master_card{
+        // height: 100%;
+        width: 1200px;
+        .card{
+            margin: 0;
+            color: var(--text-secondary);
+            background: var(--secondary-color);
+            display: grid;
+            row-gap: 1rem;
+        }
+    }
+    .cards
+    {
+        .card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .card_body{
+                display: flex;
+                flex-direction: column;
+                row-gap: 1rem;
+                text-align: center;
+            }
+        }
+    }
+}

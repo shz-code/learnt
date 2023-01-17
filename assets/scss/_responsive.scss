@@ -1,3 +1,24 @@
+@media screen and (max-width: 1200px) {
+    .why_us{
+        .master_card{
+            width: 500px;
+        }
+        .cards
+        {   
+            display: grid;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .why_us{
+        .master_card{
+            width: 100%;
+            margin: 10px 0;
+        }
+    }
+}
+
 @media screen and (max-width: 768px) {
     header{
         position: relative;
