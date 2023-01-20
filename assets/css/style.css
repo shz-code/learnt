@@ -20,6 +20,10 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  transition: 0.3s ease;
+}
+a:hover {
+  color: var(--secondary-color);
 }
 
 h1 {
@@ -181,6 +185,9 @@ header .hambtn i {
 .footer .copyright {
   background: var(--shade-color);
 }
+.footer .copyright i {
+  cursor: pointer;
+}
 
 @media screen and (max-width: 1200px) {
   .why_us .master_card {
@@ -201,13 +208,19 @@ header .hambtn i {
   .features_container {
     grid-template-columns: repeat(2, 1fr);
   }
+  .footer form .input_group {
+    padding: 0 0.8rem;
+  }
+  .footer form .input_group button {
+    right: 0.4rem;
+  }
 }
 @media screen and (max-width: 768px) {
   header {
     position: relative;
   }
   header .nav_links {
-    transform: translateY(-95px);
+    transform: translateY(-100px);
     transition: 0.3s ease;
     display: flex;
     justify-content: center;
@@ -216,7 +229,7 @@ header .hambtn i {
     width: 100%;
   }
   header .nav_links.nav_toggle {
-    transform: translateY(95px);
+    transform: translateY(100px);
   }
   header .nav_links ul {
     display: flex;
@@ -225,7 +238,7 @@ header .hambtn i {
     row-gap: 10px;
     align-items: flex-start;
     width: 300px;
-    background: red;
+    background: var(--shade-color);
     border-radius: 15px;
   }
   header .hambtn {

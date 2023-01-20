@@ -44,5 +44,8 @@
     }
     .copyright{
         background: var(--shade-color);
+        i{
+            cursor: pointer;
+        }
     }
 }

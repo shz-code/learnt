@@ -6,8 +6,9 @@
             </div>
             <div class="nav_links">
                 <ul>
+                    <li class="nav_item"><a href="./index.php">Home</a></li>
                     <li class="nav_item"><a href="#">Courses</a></li>
-                    <li class="nav_item"><a href="#">Signup</a></li>
+                    <li class="nav_item"><a href="./signup.php">Signup</a></li>
                     <li class="nav_item"><a class="btn" href="#">Get Started</a></li>
                 </ul>
             </div>

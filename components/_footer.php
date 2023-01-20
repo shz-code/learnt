@@ -10,9 +10,9 @@
             <div class="col-lg-4 col-md-6 footer_links">
                 <h4>Useful Links</h4>
                 <ul>
-                    <li><i class='bx bx-chevron-right'></i><a href="">Home</a></li>
-                    <li><i class='bx bx-chevron-right'></i><a href="">Home</a></li>
-                    <li><i class='bx bx-chevron-right'></i><a href="">Home</a></li>
+                    <li><i class='bx bx-chevron-right'></i><a href="./index.php">Home</a></li>
+                    <li><i class='bx bx-chevron-right'></i><a href="#">Home</a></li>
+                    <li><i class='bx bx-chevron-right'></i><a href="./signup.php">Signup</a></li>
                 </ul>
             </div>
             <div class="col-lg-4 col-md-12">
@@ -37,8 +37,8 @@
                 <p class="fs-6 m-0">Designed Inspired</p>
             </div>
             <div class="social_icons fs-1">
-                <i class='bx bxl-facebook-circle'></i>
-                <i class='bx bxl-github'></i>
+                <a href="https://www.facebook.com/fb.shahidul.alam"><i class='bx bxl-facebook-circle'></i></a> 
+                <a href="https://github.com/shz-code"><i class='bx bxl-github'></i></a>
             </div>
         </div>
     </div>
