@@ -158,6 +158,9 @@ header .hambtn i {
   padding: 5px;
   border-bottom: 2px solid var(--primary-color);
 }
+.signup_form .input_group input:focus {
+  outline: none;
+}
 
 .footer {
   background: var(--primary-color);
@@ -245,6 +248,7 @@ header .hambtn i {
     position: absolute;
     left: 0;
     width: 100%;
+    z-index: 100;
   }
   header .nav_links.nav_toggle {
     transform: translateY(75%);

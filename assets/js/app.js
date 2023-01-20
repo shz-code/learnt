@@ -1,10 +1,10 @@
-const hamBtn = document.querySelector(".hambtn");
-
-hamBtn.addEventListener("click", ()=> {
-    const navTog = document.querySelector(".nav_links");
-    if(navTog.classList.contains("nav_toggle"))
+// Mobile HamBtn Navbar
+$(".hambtn").click(()=>{
+    if($(".nav_links").hasClass("nav_toggle"))
     {
-        navTog.classList.remove("nav_toggle");
+        $(".nav_links").removeClass("nav_toggle");
     }
-    else navTog.classList.add("nav_toggle");
+    else $(".nav_links").addClass("nav_toggle");
 });
+
+
