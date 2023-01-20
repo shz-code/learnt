@@ -22,52 +22,35 @@
             </div>
         </section>
 
-        <section class="why_us d-block d-lg-flex gap-4 align-items-center">
-            <div class="master_card">
-            <div class="card">
-                    <h2 class="text-center">WHY US?</h2>
-                    <div class="card_body">
-                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut et quibusdam officiis in illum ex odio nulla quisquam dolorum ipsum cupiditate molestias praesentium iure totam, minima a. Fugiat illo doloremque consectetur possimus nihil fuga corrupti suscipit rem accusantium? Nobis, iure perferendis! Voluptatum necessitatibus provident repellat animi optio hic placeat assumenda.
-                        </p>
-                    </div>
-                    <a href="#" class="btn btn-primary">Learn More</a>
+        <?php include("./components/_whyUs.php") ?>
+
+        <section class="features container-sm my-4 p-0">
+            <dis class="features_container gap-3 justify-content-between">
+                <div class="features_card d-flex gap-5 cusBp align-items-center border border-gray px-4">
+                    <i class='bx bx-infinite col-1 fs-1 text-primary'></i>
+                    <span class="col-10 fw-bold">Lorem, ipsum.</span>
                 </div>
-            </div>
-            <div class="cards d-xl-flex gap-2 align-items-center">
-                <div class="card">
-                    <div class="card_body">
-                        <div class="card_icon">
-                            <i class='bx bxs-star'></i>
-                        </div>
-                        <h4>Lorem ipsum dolor sit.</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
-                        </p>
-                    </div>
+                <div class="features_card d-flex gap-5 cusBp align-items-center border border-gray px-4">
+                    <i class='bx bx-infinite col-1 fs-1 text-primary'></i>
+                    <span class="col-10 fw-bold">Lorem, ipsum.</span>
                 </div>
-                <div class="card">
-                    <div class="card_body">
-                        <div class="card_icon">
-                            <i class='bx bxs-cube'></i>
-                        </div>
-                        <h4>Lorem ipsum dolor sit.</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
-                        </p>
-                    </div>
+                <div class="features_card d-flex gap-5 cusBp align-items-center border border-gray px-4">
+                    <i class='bx bx-infinite col-1 fs-1 text-primary'></i>
+                    <span class="col-10 fw-bold">Lorem, ipsum.</span>
                 </div>
-                <div class="card">
-                    <div class="card_body">
-                        <div class="card_icon">
-                            <i class='bx bxs-graduation'></i>
-                        </div>
-                        <h4>Lorem ipsum dolor sit.</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
-                        </p>
-                    </div>
+                <div class="features_card d-flex gap-5 cusBp align-items-center border border-gray px-4">
+                    <i class='bx bx-infinite col-1 fs-1 text-primary'></i>
+                    <span class="col-10 fw-bold">Lorem, ipsum.</span>
                 </div>
-            </div>
+                <div class="features_card d-flex gap-5 cusBp align-items-center border border-gray px-4">
+                    <i class='bx bx-infinite col-1 fs-1 text-primary'></i>
+                    <span class="col-10 fw-bold">Lorem, ipsum.</span>
+                </div>
+                <div class="features_card d-flex gap-5 cusBp align-items-center border border-gray px-4">
+                    <i class='bx bx-infinite col-1 fs-1 text-primary'></i>
+                    <span class="col-10 fw-bold">Lorem, ipsum.</span>
+                </div>
+            </dis>
         </section>
 
     </main>

@@ -1,0 +1,8 @@
+.features_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    .cusBp{
+        max-width: 350px;
+        width: 100%;
+    }
+}

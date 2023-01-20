@@ -8,6 +8,9 @@
             display: grid;
         }
     }
+    .features_container{
+        grid-template-columns: repeat(3,1fr);
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -16,6 +19,9 @@
             width: 100%;
             margin: 10px 0;
         }
+    }
+    .features_container{
+        grid-template-columns: repeat(2,1fr);
     }
 }
 
@@ -48,6 +54,12 @@
     }
         .hambtn{
             display: block;
+        }
+    }
+    .features_container{
+        grid-template-columns: repeat(1,1fr);
+        .cusBp{
+            max-width: 100%;
         }
     }
 }

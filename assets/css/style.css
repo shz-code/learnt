@@ -95,6 +95,15 @@ header .hambtn i {
   text-align: center;
 }
 
+.features_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.features_container .cusBp {
+  max-width: 350px;
+  width: 100%;
+}
+
 @media screen and (max-width: 1200px) {
   .why_us .master_card {
     width: 500px;
@@ -102,11 +111,17 @@ header .hambtn i {
   .why_us .cards {
     display: grid;
   }
+  .features_container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media screen and (max-width: 992px) {
   .why_us .master_card {
     width: 100%;
     margin: 10px 0;
+  }
+  .features_container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (max-width: 768px) {
@@ -137,5 +152,11 @@ header .hambtn i {
   }
   header .hambtn {
     display: block;
+  }
+  .features_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .features_container .cusBp {
+    max-width: 100%;
   }
 }
