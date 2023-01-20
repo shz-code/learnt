@@ -141,6 +141,24 @@ header .hambtn i {
   width: 100%;
 }
 
+.signup_form {
+  background: white;
+  display: grid;
+  row-gap: 1rem;
+  padding: 2rem;
+  border-radius: 15px;
+}
+.signup_form .input_group {
+  display: grid;
+  row-gap: 0.5rem;
+}
+.signup_form .input_group input {
+  border: none;
+  background: var(--bg-color);
+  padding: 5px;
+  border-bottom: 2px solid var(--primary-color);
+}
+
 .footer {
   background: var(--primary-color);
 }
@@ -220,7 +238,7 @@ header .hambtn i {
     position: relative;
   }
   header .nav_links {
-    transform: translateY(-100px);
+    transform: translateY(-100%);
     transition: 0.3s ease;
     display: flex;
     justify-content: center;
@@ -229,7 +247,7 @@ header .hambtn i {
     width: 100%;
   }
   header .nav_links.nav_toggle {
-    transform: translateY(100px);
+    transform: translateY(75%);
   }
   header .nav_links ul {
     display: flex;
