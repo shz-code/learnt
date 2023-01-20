@@ -8,7 +8,7 @@
                 <ul>
                     <li class="nav_item"><a href="#">Courses</a></li>
                     <li class="nav_item"><a href="#">Signup</a></li>
-                    <li class="nav_item"><a class="btn btn-primary" href="#">Get Started</a></li>
+                    <li class="nav_item"><a class="btn" href="#">Get Started</a></li>
                 </ul>
             </div>
             <div class="hambtn">

@@ -24,3 +24,16 @@
         border-radius: 50%;
     }
 }
+
+.btn{
+    display: inline-block;
+    background: var(--primary-color);
+    border: none;
+    &:hover{
+        background: var(--secondary-color);
+        color: var(--text-secondary);
+    }
+    &:focus{
+        border: none;
+    }
+}

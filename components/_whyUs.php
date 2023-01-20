@@ -9,7 +9,7 @@
                     iure perferendis! Voluptatum necessitatibus provident repellat animi optio hic placeat assumenda.
                 </p>
             </div>
-            <a href="#" class="btn btn-primary">Learn More</a>
+            <a href="#" class="btn">Learn More <i class='bx bxs-chevrons-right'></i></a>
         </div>
     </div>
     <div class="cards d-xl-flex gap-2 align-items-center">

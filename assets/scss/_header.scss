@@ -1,12 +1,17 @@
 header{
     background: var(--shade-color);
+    .nav_icon{
+        font-size: 2rem;
+        font-weight: bold;
+        color: var(--text-secondary);
+    }
     .nav_links
     {
         ul{
             display: flex;
             align-items: center;
             list-style: none;
-            column-gap: 10px;
+            column-gap: 1rem;
             margin-bottom: 0;
         }
     }
