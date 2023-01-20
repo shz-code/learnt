@@ -9,7 +9,9 @@
     <main class="main container-sm mt-4">
         <h1 class="text-center">Register New User</h1>
         <form class="my-4 signup_form">
-            <div class="notification"></div>
+            <div class="input_group">
+                <div class="notification"></div>
+            </div>
             <div class="input_group">
                 <label for="username">Username: </label>
                 <input type="text" id="username" name="username">
@@ -26,7 +28,9 @@
                 <label for="con_pass">Confirm Password: </label>
                 <input type="password" id="con_pass" name="con_pass">
             </div>
-            <button disabled class="btn" type="submit" id="user_submit_btn">Submit</button>
+            <div class="input_group">
+                <button disabled class="btn" type="submit" id="user_submit_btn">Submit</button>
+            </div>
         </form>
     </main>
 

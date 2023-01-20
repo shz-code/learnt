@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;500;600;700&display=swap");
 :root {
   --primary-color: #B7CDD7;
   --secondary-color: #2B5D73;
@@ -15,6 +16,7 @@
 
 body {
   background: var(--bg-color);
+  font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -26,10 +28,13 @@ a:hover {
   color: var(--secondary-color);
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Sofia Sans", sans-serif;
+}
+
 h1 {
   font-size: 3rem;
-  font-weight: 900;
-  font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }
 
 .img_box {
@@ -151,6 +156,9 @@ header .hambtn i {
 .signup_form .input_group {
   display: grid;
   row-gap: 0.5rem;
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
 }
 .signup_form .input_group input {
   border: none;
