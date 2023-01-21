@@ -5,6 +5,7 @@
 
 <body>
     <?php include("./components/_header.php") ?>
+    <?php include("./components/_preLoader.php") ?>
 
     <main class="main container-sm">
         <section class="hero d-md-flex py-4 justify-content-between align-items-center">

@@ -1,3 +1,10 @@
+// Pre Loader
+$(document).ready(()=>{
+    setTimeout(()=>{
+        $(".pre_loader").hide();
+    },500);
+})
+
 // Mobile HamBtn Navbar
 $(".hambtn").click(()=>{
     if($(".nav_links").hasClass("nav_toggle"))

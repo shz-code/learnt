@@ -4,9 +4,10 @@ $db_user = "root";
 $db_password = "";
 $db_name = "learnt";
 
-$conn = new mysqli($db_host, $db_user, $db_password, $db_name);
-
-if($conn->connect_error)
-{
-    die("Connection Failed with DB");
+try {
+    $conn = new mysqli($db_host, $db_user, $db_password, $db_name);
+} catch (mysqli_sql_exception) {
+    die(header("HTTP/1.0 503 Service Unavailable Error"));
 }
+
+?>

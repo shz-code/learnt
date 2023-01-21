@@ -1,8 +1,8 @@
 <header>
     <div class="container-sm">
         <nav class="d-flex justify-content-between align-items-center">
-            <div class="nav_icon">
-                Learnt
+            <div>
+               <a href="./index.php" class="nav_icon">Learnt</a>
             </div>
             <div class="nav_links">
                 <ul>
