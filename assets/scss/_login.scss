@@ -1,0 +1,33 @@
+.login_form{
+    background: white;
+    display: grid;
+    row-gap: 1rem;
+    padding: 2rem;
+    border-radius: 15px;
+    .input_group
+    {
+        display: grid;
+        row-gap: 0.5rem;
+        max-width: 500px;
+        width: 100%;
+        margin: auto;
+        position: relative;
+        input{
+            border: none;
+            background: var(--bg-color);
+            padding: 5px;
+            border-bottom: 2px solid var(--primary-color);
+            &:focus{
+                outline: none;
+            }
+        }
+        i{
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: 1.5rem;
+            color: var(--shade-color);
+            cursor: pointer;
+        }
+    }
+}

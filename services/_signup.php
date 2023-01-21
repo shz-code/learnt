@@ -1,5 +1,4 @@
 <?php
-
 include_once("./_dbConnection.php");
 
 function checkPass($pass)

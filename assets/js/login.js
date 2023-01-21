@@ -7,6 +7,7 @@ const alert = (type,msg)=>{
     ${msg}
 </div>`);
 }
+
 // Email Satus Handler
 const emailStatus = (type,msg)=>{
     $("#email_status").html(`<span class="text-${type}">
@@ -32,7 +33,6 @@ $("#email").on("input",()=>{
         emailStatus(" "," ");
     }
 });
-
 // Show password function
 $(".show_password").click((e) => {
     var passType = $("#pass").attr("type");
@@ -48,45 +48,35 @@ $(".show_password").click((e) => {
     }
 });
 
-// Signup form handler
-$(".signup_form").submit((e)=>{
+// Login form handler
+$(".login_form").submit((e)=>{
     e.preventDefault();
+
     alert(" ", " ");
     $("#user_submit_btn").html(`<img src="./assets/images/pre_loader_w.svg" alt="Spinner" class="img-fluid" style="height: 22px;">`);
     btn.attr("disabled",true);
 
-    var username = $("#username").val();
     var email = $("#email").val();
     var pass = $("#pass").val();
-    var conPass = $("#con_pass").val();
 
-    if(pass != conPass)
-    {
-        alert("danger","Passwords Do Not Match!");
-    }
-    else{
-        $.ajax({
-            url: "./services/_signup.php",
-            method: "POST",
-            type: "json",
-            data: {
-                newUser: "newUser",
-                username: username,
-                email: email,
-                pass: pass,
-            },
-            success:(data)=>{
-                alert("success", "Registered Successfully");
-                $(".signup_form").html(`Your registration is completed. <a href="./login.php" class="text-secondary fw-bold fs-5">Login Here <i class='bx bx-party fs-5 text-primary'></i></a>`);
-            },
-            error:(data)=>{
-                if(data.statusText === "Email Exists")
-                    alert("danger", "Email Already Exists.");
-                else if(data.statusText === "Username Exists") alert("danger", "Username Already Exists.");
-                else alert("danger", "Error! Try Again Later.");
-                $("#user_submit_btn").html(`Submit`);
-                btn.attr("disabled",false);
-            }
-        })
-    }
+    $.ajax({
+        url: "./services/_login.php",
+        method: "POST",
+        type: "json",
+        data: {
+            loginUser: "loginUser",
+            email: email,
+            pass: pass,
+        },
+        success:()=>{
+            window.location.replace("./index.php");
+        },
+        error:(data)=>{
+            if(data.statusText === "User Not Found")
+                alert("danger", "No User Found Using This Email & Password.");
+            else alert("danger", "Error! Try Again Later.");
+            $("#user_submit_btn").html(`Login`);
+            btn.attr("disabled",false);
+        }
+    })
 });
