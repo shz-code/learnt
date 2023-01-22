@@ -26,7 +26,7 @@ if (isset($_POST["loginUser"]) && isset($_POST['email']) && isset($_POST['pass']
     }
 
     // Paswword Encryption
-    //$pass = sha1($pass);
+    $pass = sha1($pass);
 
     $sql = "SELECT user_email , user_pass FROM users WHERE user_email= '" . $email . "' AND user_pass= '" . $pass . "' ";
 

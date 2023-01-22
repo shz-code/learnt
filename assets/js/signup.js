@@ -13,6 +13,10 @@ const emailStatus = (type,msg)=>{
     ${msg}
 </span>`);
 }
+// Confirmation message
+const confirmation_message = (email)=>{
+    return `We've just sent a verification link to <strong>${email}</strong>Please check your inbox and click on the link to get started. If you can't find this email check spam folder. After verification <a href="./login.php" class="text-secondary fw-bold fs-5">Login Here <i class='bx bx-party fs-5 text-primary'></i></a>`
+}
 
 // Disable submit button based on email
 $("#email").on("input",()=>{
@@ -63,6 +67,8 @@ $(".signup_form").submit((e)=>{
     if(pass != conPass)
     {
         alert("danger","Passwords Do Not Match!");
+        $("#user_submit_btn").html(`Submit`);
+        btn.attr("disabled",false);
     }
     else{
         $.ajax({
@@ -76,8 +82,9 @@ $(".signup_form").submit((e)=>{
                 pass: pass,
             },
             success:(data)=>{
+                console.log(data);
                 alert("success", "Registered Successfully");
-                $(".signup_form").html(`Your registration is completed. <a href="./login.php" class="text-secondary fw-bold fs-5">Login Here <i class='bx bx-party fs-5 text-primary'></i></a>`);
+                $(".signup_form").html(confirmation_message(email));
             },
             error:(data)=>{
                 if(data.statusText === "Email Exists")

@@ -40,7 +40,7 @@ if (isset($_SESSION["logged_in"]))
             </div>
             <div class="input_group">
                 <button disabled class="btn btn-secondary" type="submit" id="user_submit_btn">Submit</button>
-                <p class="mt-2">Alredy a User ? <a href="./login.php" class="brand_color">Login Here.</a></p>
+                <p class="mt-2">Already a User ? <a href="./login.php" class="brand_color">Login Here.</a></p>
             </div>
         </form>
     </main>
