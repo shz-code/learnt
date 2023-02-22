@@ -68,12 +68,14 @@ $(".login_form").submit((e)=>{
             email: email,
             pass: pass,
         },
-        success:()=>{
+        success:(data)=>{
             window.location.replace("./index.php");
         },
         error:(data)=>{
             if(data.statusText === "User Not Found")
                 alert("danger", "No User Found Using This Email & Password.");
+            else if(data.statusText === "Forbidden")
+                alert("danger", "Check Your Email For Verification Mail.");
             else alert("danger", "Error! Try Again Later.");
             $("#user_submit_btn").html(`Login`);
             btn.attr("disabled",false);

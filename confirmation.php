@@ -15,12 +15,17 @@ $sql = "SELECT * FROM users WHERE user_verification_id = '" . $id . "' AND user_
 
 try {
     $res = $conn->query($sql);
-    $res = $res->num_rows;
-    if ($res > 0) {
+    $num_rows = $res->num_rows;
+    if ($num_rows == 1) {
         $sql = "UPDATE users SET user_verification_status = 1 WHERE user_verification_id = '" . $id . "' ";
         $conn->query($sql);
         $msg = "You Have Registered successfully.";
-    } else {
+    } 
+    else if($num_rows == 0)
+    {
+        $msg = "Try again later.";
+    }
+    else {
         $msg = "You are already registered";
     }
 } catch (mysqli_sql_exception) {

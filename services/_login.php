@@ -28,16 +28,24 @@ if (isset($_POST["loginUser"]) && isset($_POST['email']) && isset($_POST['pass']
     // Paswword Encryption
     $pass = sha1($pass);
 
-    $sql = "SELECT user_email , user_pass FROM users WHERE user_email= '" . $email . "' AND user_pass= '" . $pass . "' ";
+    $sql = "SELECT user_email, user_pass, user_verification_status FROM users WHERE user_email= '" . $email . "' AND user_pass= '" . $pass . "' ";
 
     try {
         $res = $conn->query($sql);
-        $res = $res->num_rows;
-
-        if($res === 1)
+        
+        $num_rows = $res->num_rows;
+        if($num_rows === 1)
         {
-            $_SESSION["logged_in"] = true;
-            $_SESSION["Email"] = $email;
+            $ck =  $res->fetch_assoc()['user_verification_status'];
+            $ck = (int)$ck;
+            if($ck == 1)
+            {
+                $_SESSION["logged_in"] = true;
+                $_SESSION["Email"] = $email;
+            }
+            else{
+                die(header("HTTP/1.0 403 Forbidden"));
+            }
         }
         else{
             die(header("HTTP/1.0 404 User Not Found"));
